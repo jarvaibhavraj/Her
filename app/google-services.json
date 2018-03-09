@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1048530746245",
+    "firebase_url": "https://herr-8b4d2.firebaseio.com",
+    "project_id": "herr-8b4d2",
+    "storage_bucket": "herr-8b4d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048530746245:android:6c05b0f8eb9d7885",
+        "android_client_info": {
+          "package_name": "xyz.mrdeveloper.her"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048530746245-p07ndh7p9kc2pmrv8v2tfmr6s4togufr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD9hrTiMq8QO_djPYlQc503B8wry76a1A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

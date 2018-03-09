@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#dddddd"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/loved_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shushma"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#222222"
+        android:textSize="19sp"/>
+
+    <TextView
+        android:id="@+id/loved_number"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:text="+91 8574567739"
+        android:textColor="#222222"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

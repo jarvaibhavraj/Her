@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context="xyz.mrdeveloper.her.Tips">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAFETY TIPS"
+        android:textSize="25sp"
+        android:textColor="#222222"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"/>
+
+    <ScrollView
+        android:layout_below="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:background="#eeeeee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:text="Here are the most common mistakes women make that could result in them getting kidnapped, attacked, and/or raped:\n\n1. Getting into the attacker's car when he pulls a gun and orders you to get into his vehicle. Most attackers don't want to shoot you ... they want you to get into the car so that they can drive you to a deserted place and torture you. Don't comply. Run screaming. It is MUCH more likely than not that he will just move on to an easier target.\n\n2. Pulling over when a man drives alongside of you pointing at your car pretending something is wrong. If this happens, drive to the nearest well-lit and populated gas station and look the car over yourself (or ask an attendant). Never pull over. Believe it or not, many women have fallen for this for fear of their car spontaneously exploding in the middle of the road. Not likely.\n\n3. Not locking your doors while driving. I have read several cases where the attacker simply walks up to a woman's car while she's at a traffic light and jumps in with his gun or knife drawn. 4. Opening your front door when you have not positively identified who is there. If you don't have a peep hole, get one. I've seen countless cases where the attacker gains access to his victims simply by knocking on their door. Don't let an attacker get into your home. He then has a private, relatively soundproof place to attack you.\n\n4. Not being alert in parking lots. If you go to the grocery store at night, don't be shy about asking for an escort to your car. Too many women are abducted from parking lots or even raped in the parking lot. Look in your back seat before entering your car. Cars provide endless hiding places for attackers, both inside them and in between them. Be aware of your surroundings by looking to the left and right and behind you with your head up all the time. You may appear paranoid and look funny to others, but an attacker will think twice about approaching someone who appears so aware of what's going on.\n\n5. Trusting a clean cut, honest looking stranger. I see mug shots of every sex offender in the state of Florida. They do not look like monsters. They often look like they could be your friendly grocer. They are every age between 15 and 90, and probably beyond. Only a small minority actually look scary. I just read a case yesterday of a man with only one leg who beat up his victim with his crutch before he raped her. Who would have ever thought that a one legged man would be a rapist?\n\n6. Trusting people to be alone with your children. This is a difficult one, because child molesters end up being the LAST person the parents would believe is the molester. Most of the child molesting cases I see involve the stepfather, the uncle, the sister's boyfriend, the mother's boyfriend, the grandfather, the baby-sitter, the neighbor, the family friend, the youth camp director, day care worker, etc. Although rare, even women can be molesters. In every case, the perpetrator is a nice guy, trusting, good with children, and the family is baffled or even in disbelief that the person could be abusing their child. When it comes to your children and grandchildren, be suspicious of everyone, no matter who they are. And pay attention to what your child says and how he/she reacts to the mention of different people in their lives.\n\n7. When having your car serviced, give the attendant only the car keys, as they have key duplicators readily available, and they generally have your address, etc. on file. I didn't mean to make anyone uncomfortable with this, but I am at work right now reviewing files, and realized that this email is a way I can reach many women at one time. I have the dirty job of reading all these files, and it makes me feel good to know that I can share some inferences from what I have learned. This is not an exhaustive list of what not to do, but just some things that I have observed more than just a few times."
+            android:textColor="#222222"
+            android:textSize="19sp" />
+
+    </ScrollView>
+
+</RelativeLayout>

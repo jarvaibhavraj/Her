@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    tools:context="xyz.mrdeveloper.her.MainActivity">
+
+    <ImageButton
+        android:id="@+id/alert_button"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:background="@drawable/sos_buttons"
+        android:clickable="true" />
+
+    <ImageButton
+        android:id="@+id/help_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/alert_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/help_buttons"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/log_out_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/tips_button"
+            android:background="@drawable/log_out_buttons"
+            android:clickable="true" />
+
+        <ImageButton
+            android:id="@+id/tips_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/tips_buttons"
+            android:clickable="true" />
+
+        <ImageButton
+            android:id="@+id/call_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/loved_button"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/call_buttons"
+            android:clickable="true" />
+
+        <ImageButton
+            android:id="@+id/loved_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/love_buttons"
+            android:clickable="true" />
+
+        <ImageButton
+            android:id="@+id/about_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/about_buttons"
+            android:clickable="true" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+    </RelativeLayout>
+
+</RelativeLayout>

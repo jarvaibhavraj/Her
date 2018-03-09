@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    tools:context="xyz.mrdeveloper.her.MainActivity">
+
+    <ImageView
+        android:id="@+id/image_dsc_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/google_dsc" />
+
+    <TextView
+        android:id="@+id/text_app_by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_dsc_logo"
+        android:layout_marginTop="20dp"
+        android:text="App by UPES Developer Student Club"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_google_initiative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_app_by"
+        android:layout_marginTop="5dp"
+        android:text="A Google Initiative"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_google_initiative"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_book"
+            android:text="App developed by Mr. Developer team"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/quicksand_book"
+            android:text="Lakshay Raj"
+            android:textColor="@color/colorText"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_book"
+            android:text="Vaibhav Anand"
+            android:textColor="@color/colorText"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_book"
+            android:text="Vaibhav Raj Singh"
+            android:textColor="@color/colorText"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Reviews &amp; Suggestions"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="0dp"
+            android:autoLink="all"
+            android:text="mrdeveloperxyz@gmail.com"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textColorLink="@color/colorAccent"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Website"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="0dp"
+            android:autoLink="all"
+            android:text="mrdeveloper.xyz"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textColorLink="@color/colorAccent"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/textSplashMrDeveloper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/quicksand_book"
+            android:text="Crafted with"
+            android:textColor="@color/colorText"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_above="@id/textSplashMrDeveloper"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:src="@drawable/heart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/quicksand_book"
+            android:text="by Mr. Developer"
+            android:textColor="@color/colorText"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

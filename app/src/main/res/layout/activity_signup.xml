@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/title_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#dddddd"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/phone_auth_fields"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <EditText
+                android:id="@+id/field_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_phone_number"
+                android:inputType="phone"
+                android:textColor="#222"
+                android:textColorHint="#222" />
+
+            <Button
+                android:id="@+id/button_start_verification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#222222"
+                android:text="@string/start_phone_auth"
+                android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/phone_verification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:weightSum="3.0">
+
+            <EditText
+                android:id="@+id/field_verification_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_verification_code"
+                android:inputType="number"
+                android:textColor="#222"
+                android:textColorHint="#222" />
+
+            <Button
+                android:id="@+id/button_verify_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1.0"
+                android:background="#222222"
+                android:text="@string/verify_phone_auth"
+                android:theme="@style/ThemeOverlay.MyDarkButton" />
+
+            <Button
+                android:id="@+id/button_resend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="#222222"
+                android:text="@string/resend_phone_auth"
+                android:theme="@style/ThemeOverlay.MyDarkButton" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

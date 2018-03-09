@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FakeCallActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fake_call"/>
+    <!--<TextView-->
+        <!--android:id="@+id/textView1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text="@string/incomingcall"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/textView1"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:contentDescription="@null"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/chosenfakename"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/imageView1"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text="@string/fakecallname"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="20sp" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/chosenfakenumber"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/chosenfakename"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:text="@string/fakecallnumber"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="22sp"-->
+        <!--android:textStyle="bold" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/answercall"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_marginBottom="26dp"-->
+        <!--android:layout_marginLeft="29dp"-->
+        <!--android:contentDescription="@null" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/rejectcall"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/answercall"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginRight="32dp"-->
+        <!--android:contentDescription="@null" />-->
+
+</RelativeLayout>
