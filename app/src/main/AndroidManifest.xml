@@ -1,57 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="xyz.mrdeveloper.her">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <!-- <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /> -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.SEND_SMS" />
 
     <application
-        android:name=".UpdateFromFirebase"
+        android:name=".HerApplication"
         android:allowBackup="true"
         android:fullBackupContent="true"
-        android:icon="@drawable/logo"
+        android:icon="@drawable/her_logo_final"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/her_logo_final"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.NoActionBar">
+        android:theme="@style/AppTheme">
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
 
-        <activity android:name=".MainActivity" />
-        <activity
-            android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
-        <activity android:name=".HelpActivity" />
-        <activity android:name=".Signup">
+        <activity android:name=".SignupActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LovedOneActivity" />
+        <activity
+            android:name=".MainActivity"/>
+        <activity android:name=".EmergencyActivity" />
+        <activity android:name=".FamilyMemberActivity" />
+        <activity android:name=".FakeCallActivity" />
+        <activity android:name=".TipsActivity" />
+        <activity android:name=".AboutActivity" />
 
-        <receiver android:name=".ScreenReceiver">
+        <receiver android:name=".FakeCallReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="xyz.mrdeveloper.her.ACTION_FAKE_CALL" />
             </intent-filter>
         </receiver>
 
-        <service
-            android:name=".LockService"
-            android:enabled="true" />
+        <service android:name=".EmergencyCheckService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
 
-        <activity android:name=".FakeCallActivity" />
-        <activity android:name=".Tips" />
-        <activity android:name=".GuardianActivity" />
-        <activity android:name=".AboutActivity"></activity>
+        <!--<receiver android:name=".ScreenOnOffReceiver">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.SCREEN_ON" />-->
+                <!--<action android:name="android.intent.action.SCREEN_OFF" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!---->
+        <!--<service-->
+            <!--android:name=".ScreenOnOffService"-->
+            <!--android:enabled="true"-->
+            <!--android:exported="true" />-->
+
     </application>
 
 </manifest>

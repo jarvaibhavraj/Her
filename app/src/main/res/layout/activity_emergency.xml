@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_working_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/brandon_med"
+        android:gravity="center"
+        android:text="@string/sos_mode_on"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_working_mode"
+        android:fontFamily="@font/brandon_light"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/sos_mode_protectors_notified"
+        android:textSize="16sp" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text_message" />
+
+    <Button
+        android:id="@+id/cancel_emergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimary"
+        android:text="Cancel Emergency"
+        android:textColor="@color/colorBackground" />
+
+</RelativeLayout>

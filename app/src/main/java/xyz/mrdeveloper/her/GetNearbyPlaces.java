@@ -9,6 +9,17 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
@@ -52,7 +63,7 @@ public class GetNearbyPlaces extends AsyncTask<Object, String, String> {
 
     private void ShowNearbyPlaces(List<HashMap<String, String>> nearbyPlacesList) {
         for (int i = 0; i < nearbyPlacesList.size(); i++) {
-            Log.d("onPostExecute", "Entered into showing locations");
+//            Log.d("onPostExecute", "Entered into showing locations");
             MarkerOptions markerOptions = new MarkerOptions();
             HashMap<String, String> googlePlace = nearbyPlacesList.get(i);
             double lat = Double.parseDouble(googlePlace.get("lat"));
@@ -66,17 +77,124 @@ public class GetNearbyPlaces extends AsyncTask<Object, String, String> {
             String police = "police";
             if (Objects.equals(placeType, police)) {
 //                markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_RED));
-                markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.police_map_icon));
+                markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.police_marker_32px));
                 Log.d("debug", "SHOWING POLICE");
             } else if (Objects.equals(placeType, hospital)) {
 //                markerOptions.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE));
-                markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.hospital_map_icon));
+                markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.hospital_marker_32px));
                 Log.d("debug", "SHOWING HOSPITAL");
             }
             mMap.addMarker(markerOptions);
 
 //            mMap.moveCamera(CameraUpdateFactory.newLatLng(latLng));
-//            mMap.animateCamera(CameraUpdateFactory.zoomTo(11));
+//            mMap.animateCamera(CameraUpdateFactory.zoomTo(16));
+        }
+    }
+
+
+    private class DataParser {
+        List<HashMap<String, String>> parse(String jsonData) {
+            JSONArray jsonArray = null;
+            JSONObject jsonObject;
+
+            try {
+                Log.d("Places", "parse");
+                jsonObject = new JSONObject((String) jsonData);
+                jsonArray = jsonObject.getJSONArray("results");
+            } catch (JSONException e) {
+                Log.d("Places", "parse error");
+                e.printStackTrace();
+            }
+            return getPlaces(jsonArray);
+        }
+
+        private List<HashMap<String, String>> getPlaces(JSONArray jsonArray) {
+            int placesCount = 0;
+            if (jsonArray != null)
+                placesCount = jsonArray.length();
+
+            List<HashMap<String, String>> placesList = new ArrayList<>();
+            HashMap<String, String> placeMap = null;
+            Log.d("Places", "getPlaces");
+
+            for (int i = 0; i < placesCount; i++) {
+                try {
+                    placeMap = getPlace((JSONObject) jsonArray.get(i));
+                    placesList.add(placeMap);
+                    Log.d("Places", "Adding places");
+
+                } catch (JSONException e) {
+                    Log.d("Places", "Error in Adding places");
+                    e.printStackTrace();
+                }
+            }
+            return placesList;
+        }
+
+        private HashMap<String, String> getPlace(JSONObject googlePlaceJson) {
+            HashMap<String, String> googlePlaceMap = new HashMap<String, String>();
+            String placeName = "-NA-";
+            String vicinity = "-NA-";
+            String latitude = "";
+            String longitude = "";
+            String reference = "";
+
+//            Log.d("getPlace", "Entered");
+
+            try {
+                if (!googlePlaceJson.isNull("name")) {
+                    placeName = googlePlaceJson.getString("name");
+                }
+                if (!googlePlaceJson.isNull("vicinity")) {
+                    vicinity = googlePlaceJson.getString("vicinity");
+                }
+                latitude = googlePlaceJson.getJSONObject("geometry").getJSONObject("location").getString("lat");
+                longitude = googlePlaceJson.getJSONObject("geometry").getJSONObject("location").getString("lng");
+                reference = googlePlaceJson.getString("reference");
+                googlePlaceMap.put("place_name", placeName);
+                googlePlaceMap.put("vicinity", vicinity);
+                googlePlaceMap.put("lat", latitude);
+                googlePlaceMap.put("lng", longitude);
+                googlePlaceMap.put("reference", reference);
+                Log.d("getPlace", "Putting Places");
+            } catch (JSONException e) {
+                Log.d("getPlace", "Error");
+                e.printStackTrace();
+            }
+            return googlePlaceMap;
+        }
+    }
+
+    private class DownloadUrl {
+
+        String readUrl(String strUrl) throws IOException {
+            String data = "";
+            HttpURLConnection urlConnection = null;
+            URL url = new URL(strUrl);
+
+            urlConnection = (HttpURLConnection) url.openConnection();
+            urlConnection.connect();
+
+            try (InputStream iStream = urlConnection.getInputStream()) {
+                BufferedReader br = new BufferedReader(new InputStreamReader(iStream));
+
+                StringBuilder sb = new StringBuilder();
+
+                String line = "";
+                while ((line = br.readLine()) != null) {
+                    sb.append(line);
+                }
+
+                data = sb.toString();
+                Log.d("downloadUrl", data);
+                br.close();
+
+            } catch (Exception e) {
+                Log.d("Exception", e.toString());
+            } finally {
+                urlConnection.disconnect();
+            }
+            return data;
         }
     }
 }

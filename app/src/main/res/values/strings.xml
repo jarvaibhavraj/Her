@@ -1,23 +1,167 @@
 <resources>
     <string name="app_name">Her</string>
-    <string name="sign_out">Sign Out</string>
-    <string name="hint_phone_number">Enter Phone Number</string>
-    <string name="hint_verification_code">Verification Code</string>
-    <string name="start_phone_auth">Start</string>
+
+
+    <string name="hint_name">Enter name</string>
+    <string name="hint_phone_number">Enter phone number</string>
+    <string name="hint_verification_code">Enter the verification code</string>
+    <string name="auto_verify">We will auto verify the code or you can manually</string>
+    <string name="start_phone_auth">Signup</string>
     <string name="verify_phone_auth">Verify</string>
     <string name="resend_phone_auth">Resend</string>
-    <string name="title_activity_maps">Her</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="thirtysecs">10 secs</string>
-    <string name="onemin">30 secs</string>
-    <string name="fivemins">1 min</string>
-    <string name="make_call">Call</string>
-    <string name="fake_name">Enter name</string>
-    <string name="fake_number">Enter phone number</string>
-    <string name="title_activity_fake_ringing">FakeRingingActivity</string>
-    <string name="incomingcall">Incoming Call</string>
-    <string name="fakecallname">Genny Nnaji</string>
-    <string name="fakecallnumber">080371558000</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Emergency Channel</string>
+
+
+    <string name="sms_permission_rationale">SMS permission is needed to send SMS to family and friends</string>
+    <string name="location_permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core functionality.</string>
+    <string name="settings">Settings</string>
+
+
+    <string name="sos_mode_on">SOS MODE ON</string>
+    <string name="sos_mode_no_protectors">There are no protectors around you at the moment.\nWe are actively searching for someone to notify.\nIn the meantime get to a safe location.</string>
+    <string name="sos_mode_protectors_notified"> PROTECTORS have been notified.\nThey will reach you shortly.\nDon\'t panic. Move to a safe location.</string>
+
+
+    <string name="safe_places_mode_on">SHOWING SAFE PLACES</string>
+    <string name="safe_places_mode_message">Don\'t panic.\nMove to one of the indicated safe locations.</string>
+
+
+    <string name="rescue_mode_on">RESCUE MODE ON</string>
+    <string name="rescue_mode_message">Someone is in danger! Follow the displayed path to rescue them.</string>
+
+
+    <string name="emergency_over">The person cancelled the help request. You can still go to their last known location to check on them.</string>
+    <string name="cancel_emergency">Are you out of danger?</string>
+
+
+    <string name="ten_seconds">10 secs</string>
+    <string name="one_minute">1 min</string>
+    <string name="five_minutes">5 mins</string>
+
+
+    <string name="log_out_button">LOG OUT</string>
+    <string name="info_button">GUIDE</string>
+    <string name="tips_button">SAFETY TIPS</string>
+    <string name="fake_call_button">FAKE CALL</string>
+    <string name="family_button">FAMILY</string>
+    <string name="safe_places_buttons">SAFE PLACES</string>
+
+
+    <string name="terms_of_use_title">TERMS OF USE – HER MOBILE APPLICATION</string>
+    <string name="terms_of_use_clause">
+Mr. Developer Pvt. Ltd. (\"us\", \"we\", or \"our\") operates the \"Her\" mobile application (the "Service").
+\nThis page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
+\nWe use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions.
+\n\n
+\nINFORMATION COLLECTION AND USE
+\n\nWe collect several different types of information for various purposes to provide and improve our Service to you.
+\nTypes of Data Collected
+\nPersonal Data
+\nWhile using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ("Personal Data"). Personal identifiable information may include, but is not limited to:
+\n•	Phone number
+\n•	Location data
+\nWhen you access the Service by or through a mobile device, this Personal Data may include information such as the type of mobile device you use, your mobile device unique ID, the IP address of your mobile device, your mobile operating system, the type of mobile Internet browser you use, unique device identifiers and other diagnostic data.
+\n\n
+\nUSE OF DATA
+\n\nMr. Developer Pvt. Ltd. uses the collected data for various purposes:
+\n•	To provide and maintain the Service
+\n•	To notify you about changes to our Service
+\n•	To allow you to participate in interactive features of our Service when you choose to do so
+\n•	To provide customer care and support
+\n•	To provide analysis or valuable information so that we can improve the Service
+\n•	To monitor the usage of the Service
+\n•	To detect, prevent and address technical issues
+\n\n
+\nTRANSFER OF DATA
+\n\nYour information, including Personal Data, may be transferred to — and maintained on — computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.
+\nIf you are located outside India and choose to provide information to us, please note that we transfer the data, including Personal Data, to India and process it there.
+\nYour consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.
+\nMr. Developer Pvt. Ltd. will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.
+\n\n
+\nDISCLOSURE OF DATA
+\nLegal Requirements
+\n\nMr. Developer Pvt. Ltd. may disclose your Personal Data in the good faith belief that such action is necessary to:
+\n•	To comply with a legal obligation
+\n•	To protect and defend the rights or property of Mr. Developer Pvt. Ltd.
+\n•	To prevent or investigate possible wrongdoing in connection with the Service
+\n•	To protect the personal safety of users of the Service or the public
+\n•	To protect against legal liability
+\n\n
+\nSECURITY OF DATA
+\n\nThe security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.
+\n\n
+\nSERVICE PROVIDERS
+\n\nWe may employ third party companies and individuals to facilitate our Service ("Service Providers"), to provide the Service on our behalf, to perform Service-related services or to assist us in analysing how our Service is used.
+\nThese third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.
+\nAnalytics
+\nWe may use third-party Service Providers to monitor and analyse the use of our Service.
+\nGoogle Analytics - Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Service. This data is shared with other Google services. Google may use the collected data to contextualize and personalize the ads of its own advertising network.
+\nFor more information on the privacy practices of Google, please visit the Google Privacy &amp; Terms web page: https://policies.google.com/privacy?hl=en
+\n\n
+\nRULES ABOUT USE OF THE SERVICE
+\n\nWe will use reasonable endeavours to correct any errors or omissions as soon as practicable after being notified of them. However, we do not guarantee that the Services or the Mobile Application will be free of faults, and we do not accept liability for any such faults, errors or omissions. In the event of any such error, fault or omission, you should report it by contacting us at 6844 0092.
+\nWe do not warrant that your use of the Services or the Mobile Application will be uninterrupted and we do not warrant that any information (or messages) transmitted via the Services or the Mobile Application will be transmitted accurately, reliably, in a timely manner or at all. Notwithstanding that we will try to allow uninterrupted access to the Services and the Mobile Application, access to the Services and the Mobile Application may be suspended, restricted or terminated at any time.
+\nWe do not give any warranty that the Services and the Mobile Application are free from viruses or anything else which may have a harmful effect on any technology.
+\nWe reserve the right to change, modify, substitute, suspend or remove without notice any information or Services on the Mobile Application from time to time. Your access to the Mobile Application and/or the Services may also be occasionally restricted to allow for repairs, maintenance or the introduction of new facilities or services. We will attempt to restore such access as soon as we reasonably can. For the avoidance of doubt, we reserve the right to withdraw any information or Services from the Mobile Application at any time.
+\nWe reserve the right to block access to and/or to edit or remove any material which in our reasonable opinion may give rise to a breach of these Terms and Conditions of Use.
+\n\n
+\nDISCLAIMER AND EXCLUSION OF LIABILITY
+\n\nThe Mobile Application, the Services, the information on the Mobile Application and use of all related facilities are provided on an "as is, as available" basis without any warranties whether express or implied.
+\nTo the fullest extent permitted by applicable law, we disclaim all representations and warranties relating to the Mobile Application and its contents, including in relation to any inaccuracies or omissions in the Mobile Application, warranties of merchantability, quality, fitness for a particular purpose, accuracy, availability, non-infringement or implied warranties from course of dealing or usage of trade.
+\nWe do not warrant that the Mobile Application will always be accessible, uninterrupted, timely, secure, error free or free from computer virus or other invasive or damaging code or that the Mobile Application will not be affected by any acts of God or other force majeure events, including inability to obtain or shortage of necessary materials, equipment facilities, power or telecommunications, lack of telecommunications equipment or facilities and failure of information technology or telecommunications equipment or facilities.
+\nWhile we may use reasonable efforts to include accurate and up-to-date information on the Mobile Application, we make no warranties or representations as to its accuracy, timeliness or completeness.
+\nWe shall not be liable for any acts or omissions of any third parties howsoever caused, and for any direct, indirect, incidental, special, consequential or punitive damages, howsoever caused, resulting from or in connection with the mobile application and the services offered in the mobile application, your access to, use of or inability to use the mobile application or the services offered in the mobile application, reliance on or downloading from the mobile application and/or services, or any delays, inaccuracies in the information or in its transmission including but not limited to damages for loss of business or profits, use, data or other intangible, even if we have been advised of the possibility of such damages.
+\nWe shall not be liable in contract, tort (including negligence or breach of statutory duty) or otherwise howsoever and whatever the cause thereof, for any indirect, consequential, collateral, special or incidental loss or damage suffered or incurred by you in connection with the Mobile Application and these Terms and Conditions of Use. For the purposes of these Terms and Conditions of Use, indirect or consequential loss or damage includes, without limitation, loss of revenue, profits, anticipated savings or business, loss of data or goodwill, loss of use or value of any equipment including software, claims of third parties, and all associated and incidental costs and expenses.
+\nThe above exclusions and limitations apply only to the extent permitted by law. None of your statutory rights as a consumer that cannot be excluded or limited are affected.
+\nNotwithstanding our efforts to ensure that our system is secure, you acknowledge that all electronic data transfers are potentially susceptible to interception by others. We cannot, and do not, warrant that data transfers pursuant to the Mobile Application, or electronic mail transmitted to and from us, will not be monitored or read by others.
+\n\n
+\nINDEMNITY
+\n\nYou agree to indemnify and keep us indemnified against any claim, action, suit or proceeding brought or threatened to be brought against us which is caused by or arising out of
+\n•	your use of the Services,
+\n•	any other party’s use of the Services using your user ID, verification PIN and/or any identifier number allocated by Mr. Developer Pvt. Ltd. and/or
+\n•	your breach of any of these Terms and Conditions of Use, and to pay us damages, costs and interest in connection with such claim, action, suit or proceeding.
+\n\n
+\nINTELLECTUAL PROPERTY RIGHTS
+\n\nAll editorial content, information, photographs, illustrations, artwork and other graphic materials, and names, logos and trademarks on the Mobile Application are protected by copyright laws and/or other laws and/or international treaties, and belong to us and/or our suppliers, as the case may be. These works, logos, graphics, sounds or images may not be copied, reproduced, retransmitted, distributed, disseminated, sold, published, broadcasted or circulated whether in whole or in part, unless expressly permitted by us and/or our suppliers, as the case may be.
+\nNothing contained on the Mobile Application should be construed as granting by implication, estoppel, or otherwise, any license or right to use any trademark displayed on the Mobile Application without our written permission. Misuse of any trademarks or any other content displayed on the Mobile Application is prohibited.
+\nWe will not hesitate to take legal action against any unauthorised usage of our trademarks, name or symbols to preserve and protect its rights in the matter. All rights not expressly granted herein are reserved. Other product and company names mentioned herein may also be the trademarks of their respective owners.
+\n\n
+\nCHILDREN\'S PRIVACY
+\n\nOur Service does not address anyone under the age of 18 ("Children").
+\nWe do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or guardian and you are aware that your Children has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers.
+\n\n
+\nAMENDMENTS
+\n\nWe may periodically make changes to the contents of the Mobile Application, including to the descriptions and prices of goods and services advertised, at any time and without notice. We assume no liability or responsibility for any errors or omissions in the content of the Mobile Application.
+\nWe reserve the right to amend these Terms and Conditions of Use from time to time without notice. The revised Terms and Conditions of Use will be posted on the Mobile Application and shall take effect from the date of such posting. You are advised to review these terms and conditions periodically as they are binding upon you.
+\n\n
+\nCONTACT US
+\n\nIf you have any questions about these terms, please contact us by email: mrdeveloperxyz@gmail.com
+\n\n
+    </string>
+
+    <string name="safety_tips">1. Carry a pepper spray with you, always and keep it handy. Don’t tuck it too low in your bag.
+\n\n2. Hold your bag as tightly as you can when you are taking public transport. You can use it to hit your predator.
+\n\n3. When you are walking on a road, keep your mobile phone handy but avoid using it. Being on the phone makes you less alert.
+\n\n4. When you are travelling in an auto alone, make sure you share the auto number with someone in your family even if it’s during the day.
+\n\n5. Similarly, if you have booked a cab, always share your coordinates with someone.
+\n\n6. When in office, avoid going to isolated areas with no CCTV cameras.
+\n\n7. If you have parked your car, always look underneath, especially at night or at a less-crowded area.
+\n\n8. Whenever you are posting anything on social media, make sure you don’t do it in real-time. Because if you do, you’re telling people on your social media about your whereabouts. Delay those posts by say, 20-30 minutes.
+\n\n9. Always ensure you aren’t posting anything on your social media with your address or phone number on it.
+\n\n10. Whenever you are giving out order for delivery at a grocery store, make sure you whisper your address or write it down somewhere and give it to the shopkeeper. Never announce it.
+\n\n11. Whenever you are getting your phone recharged, if it’s at a store, don’t loudly speak up your phone number.
+\n\n12. Always pour your own drinks at parties and don’t ever take drinks from complete strangers or even friends. If you’ve left your drink unattended for even a few minutes, leave it and get a fresh drink. It may have been spiked when you weren\’t looking.
+\n\n13. If you feel someone is stalking you, try to find a crowded place and call someone for help.
+    </string>
+
+    <string name="how_to_use">1. The help button notifies protectors around you with your location. Press it in absolute emergency.
+\n\n2. If you just want to know about safe places around you, use the safe places mode.
+\n\n3. You can add names and phone numbers of your family and friends in the Family section. The app will send them an SMS when you press the HELP button.
+\n\n4. Double tapping volume down button quickly opens the app from anywhere in the phone.
+    </string>
+
 </resources>

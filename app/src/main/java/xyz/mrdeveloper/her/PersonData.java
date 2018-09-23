@@ -5,7 +5,7 @@ package xyz.mrdeveloper.her;
  */
 
 class PersonData {
-    Float latitude, longitude;
-    Boolean amIAlerted;
-    String phoneNumber;
+    public boolean isInEmergency;
+    public Float latitude, longitude;
+    public String phoneNumber;
 }

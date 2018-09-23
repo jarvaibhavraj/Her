@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "192153495194",
+    "firebase_url": "https://herapp-fe23c.firebaseio.com",
+    "project_id": "herapp-fe23c",
+    "storage_bucket": "herapp-fe23c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192153495194:android:6c05b0f8eb9d7885",
+        "android_client_info": {
+          "package_name": "xyz.mrdeveloper.her"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192153495194-6nvgijoike1hr6om5n1igu2iulh3ct7t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "xyz.mrdeveloper.her",
+            "certificate_hash": "c5d4fdffaa08e353ff1a2c367f9bd13e2114cc24"
+          }
+        },
+        {
+          "client_id": "192153495194-mlujo8r6ogmlh0gq3jjgolcbkiearrvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBunsipU7GRIJHHo5rTrBxAAQU7S5Sp64M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192153495194-mlujo8r6ogmlh0gq3jjgolcbkiearrvp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -3,23 +3,16 @@ package xyz.mrdeveloper.her;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-
-/**
- * Created by Vaibhav on 25-11-2017.
- */
+import android.util.Log;
 
 public class FakeCallReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        String getFakeName = intent.getStringExtra("FAKENAME");
-        String getFakePhoneNumber = intent.getStringExtra("FAKENUMBER");
+        Log.i("debug","RECEIVING FAKE CALL");
 
-        Intent intentObject = new Intent(context.getApplicationContext(), FakeCallActivity.class);
+        Intent intentObject = new Intent(context, FakeCallActivity.class);
         intentObject.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        intentObject.putExtra("myfakename", getFakeName);
-        intentObject.putExtra("myfakenumber", getFakePhoneNumber);
         context.startActivity(intentObject);
     }
-
 }

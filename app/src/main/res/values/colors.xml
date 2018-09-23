@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#222222</color>
+    <color name="colorPrimaryDark">#ffffff</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#ffffff</color>
+    <color name="colorText">#505050</color>
+    <color name="colorTextLight">#ececec</color>
 
-    <color name="colorBackground">#dddddd</color>
-    <color name="colorMainBackground">#eeeeee</color>
-    <color name="colorText">#252525</color>
+    <color name="colorStatusBar">#ffffff</color>
+    <color name="colorStatusBarBlue">#068cce</color>
 
-    <color name="fui_errorColor">#DD2C00</color>
-    <color name="fui_linkColor">#4285F4</color>
-    <color name="fui_transparent">#00000000</color>
-
-    <color name="fui_buttonShadow">#64BEBEBE</color>
-    <color name="fui_bgEmail">#D0021B</color>
-    <color name="fui_bgFacebook">#3B5998</color>
-    <color name="fui_bgGoogle">#ffffff</color>
-    <color name="fui_bgPhone">#43C5A5</color>
-    <color name="fui_bgTwitter">#FF5BAAF4</color>
 </resources>
